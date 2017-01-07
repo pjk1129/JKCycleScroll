@@ -5,11 +5,13 @@
 #### 1.初始化JKCycleScrollView
     
 ###### 定义JKCycleScrollView对象
-    @property (nonatomic, strong) NSArray  *data;
+    
+    @property (nonatomic, strong) NSArray  *data;
     @property (nonatomic, strong) JKCycleScrollView *scrollView;
     
 ###### 初始化scrollView
-    - (JKCycleScrollView *)scrollView {
+    
+    - (JKCycleScrollView *)scrollView {
         if (!_scrollView) {
           _scrollView = [[JKCycleScrollView alloc] initWithFrame:CGRectZero scrollDirection:UICollectionViewScrollDirectionHorizontal];
           _scrollView.backgroundColor = [UIColor orangeColor];
@@ -29,10 +31,12 @@
      }
      
 ###### 初始化数据源
+    
     self.data = @[@"http://img.pconline.com.cn/images/upload/upc/tx/photoblog/1410/21/c4/39944979_39944979_1413878416125_mthumb.jpg",@"http://image92.360doc.com/DownloadImg/2015/12/1715/63143393_18.jpg",@"http://f.hiphotos.baidu.com/image/pic/item/b151f8198618367a9f738e022a738bd4b21ce573.jpg",@"http://img006.hc360.cn/hb/MTQ2MDc5MzQ2ODQyNy02OTQyMjQ1MjI=.jpg"];
     
-    刷新视图
-    [self.scrollView reloadData];
+###### 刷新视图
+
+    [self.scrollView reloadData];
  
  #### 2.实现JKCyclicScrollViewDataSource和JKCyclicScrollViewDelegate协议
     
