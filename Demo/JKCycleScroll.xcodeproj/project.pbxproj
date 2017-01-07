@@ -16,6 +16,7 @@
 		68E2F8681E1F8DC300925BB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68E2F8661E1F8DC300925BB8 /* LaunchScreen.storyboard */; };
 		68E2F8751E1F8E4F00925BB8 /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E2F8741E1F8E4F00925BB8 /* TestCell.m */; };
 		68E2F8821E20D49700925BB8 /* JKCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E2F8811E20D49700925BB8 /* JKCycleScrollView.m */; };
+		68E2F8841E20E49300925BB8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 68E2F8831E20E49300925BB8 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		68E2F8761E1F8F1200925BB8 /* JKCycleScroll-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JKCycleScroll-Prefix.pch"; sourceTree = "<group>"; };
 		68E2F8801E20D49700925BB8 /* JKCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKCycleScrollView.h; sourceTree = "<group>"; };
 		68E2F8811E20D49700925BB8 /* JKCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCycleScrollView.m; sourceTree = "<group>"; };
+		68E2F8831E20E49300925BB8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		91A53FE10BCD56AEB5818073 /* Pods-JKCycleScroll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKCycleScroll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKCycleScroll/Pods-JKCycleScroll.debug.xcconfig"; sourceTree = "<group>"; };
 		B06140815BC318D913C2A792 /* Pods-JKCycleScroll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKCycleScroll.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKCycleScroll/Pods-JKCycleScroll.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +64,7 @@
 		68E2F84C1E1F8DC200925BB8 = {
 			isa = PBXGroup;
 			children = (
+				68E2F8831E20E49300925BB8 /* README.md */,
 				68E2F8571E1F8DC200925BB8 /* JKCycleScroll */,
 				68E2F8561E1F8DC200925BB8 /* Products */,
 				F9C2627ED8246A6F1E4566BD /* Pods */,
@@ -247,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68E2F8841E20E49300925BB8 /* README.md in Sources */,
 				68E2F8601E1F8DC200925BB8 /* ViewController.m in Sources */,
 				68E2F8751E1F8E4F00925BB8 /* TestCell.m in Sources */,
 				68E2F85D1E1F8DC200925BB8 /* AppDelegate.m in Sources */,
