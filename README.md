@@ -39,15 +39,13 @@
 ```objective-c
 self.data = @[@"http://img.pconline.com.cn/images/upload/upc/tx/photoblog/1410/21/c4/39944979_39944979_1413878416125_mthumb.jpg",@"http://image92.360doc.com/DownloadImg/2015/12/1715/63143393_18.jpg",@"http://f.hiphotos.baidu.com/image/pic/item/b151f8198618367a9f738e022a738bd4b21ce573.jpg",@"http://img006.hc360.cn/hb/MTQ2MDc5MzQ2ODQyNy02OTQyMjQ1MjI=.jpg"];
 ```   
- #### 刷新视图
+#### 刷新视图
 
 ```objective-c
 [self.scrollView reloadData];
 ```   
     
 ### 2.实现JKCyclicScrollViewDataSource和JKCyclicScrollViewDelegate协议
-
- Request serializers create requests from URL strings, encoding parameters as either a query string or HTTP body. 
 
 ```objective-c
     #pragma mark - JKCyclicScrollViewDataSource
