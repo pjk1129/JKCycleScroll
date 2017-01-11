@@ -4,7 +4,15 @@
 
 ## Usage
 
-### 1.初始化JKCycleScrollView
+### 1.Installation
+
+#### JKCycleScrollView is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
+
+```ruby
+pod 'JKCycleScrollView', '~> 0.1.0'
+```
+
+### 2.初始化JKCycleScrollView
 
 #### 定义JKCycleScrollView对象
 
@@ -42,7 +50,7 @@ self.data = @[@"http://img.pconline.com.cn/images/upload/upc/tx/photoblog/1410/2
 [self.scrollView reloadData];
 ```   
     
-### 2.实现JKCyclicScrollViewDataSource和JKCyclicScrollViewDelegate协议
+### 3.实现JKCyclicScrollViewDataSource和JKCyclicScrollViewDelegate协议
 
 ```objective-c
     #pragma mark - JKCyclicScrollViewDataSource
