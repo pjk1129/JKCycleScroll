@@ -23,13 +23,10 @@
           _scrollView.dataSource = self;
           _scrollView.scrollType = JKScrollTypeAutoCyclically;
           [_scrollView registerClass:[TestCell class] forCellWithReuseIdentifier:kCycleScrollViewReuseIdentifer];
+          _scrollView.translatesAutoresizingMaskIntoConstraints = NO;
           [self.view addSubview:_scrollView];
-          [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-             make.top.equalTo(self.view).with.offset(100);
-             make.left.equalTo(self.view).with.offset(20);
-             make.right.equalTo(self.view).with.offset(-20);
-             make.height.equalTo(@(220));
-           }];
+          [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[_scrollView]-20-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_scrollView)]];
+          [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-100-[_scrollView(204)]" options:NSLayoutFormatAlignAllTop metrics:nil views:NSDictionaryOfVariableBindings(_scrollView)]];
         }
         return _scrollView;
      }
