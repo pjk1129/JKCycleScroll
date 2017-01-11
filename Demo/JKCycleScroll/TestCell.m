@@ -10,8 +10,7 @@
 
 @implementation TestCell
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
         [self imageView];
@@ -24,10 +23,12 @@
     if (!_imageView) {
         _imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
         _imageView.backgroundColor = [UIColor clearColor];
+        _imageView.translatesAutoresizingMaskIntoConstraints = NO;
         [self.contentView addSubview:_imageView];
-        [_imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(self.contentView).with.insets(UIEdgeInsetsMake(2, 2, 2, 2));
-        }];
+        // align _imageView from the left and right
+        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-2-[_imageView]-2-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_imageView)]];
+        // align _imageView from the top and bottom
+        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-2-[_imageView]-2-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_imageView)]];
     }
     return _imageView;
 }

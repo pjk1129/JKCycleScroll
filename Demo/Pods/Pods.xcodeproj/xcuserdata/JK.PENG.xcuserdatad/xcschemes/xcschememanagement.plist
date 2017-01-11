@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Masonry.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-JKCycleScroll.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>03BD3808A235A1473F5AF825</key>
+		<key>15FB91CFFC45423958B0411D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3709B69C523F1646A9D9F93B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>76E4B9FBEB26D3488A7B47FE</key>
+		<key>D9D21977411A2D6F3E37C434</key>
 		<dict>
 			<key>primary</key>
 			<true/>

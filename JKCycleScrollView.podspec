@@ -19,6 +19,5 @@ s.source_files  = "JKCycleScrollView/**/*.{h,m}"
 s.requires_arc = true
 
 s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit'
-s.dependency 'Masonry', '~> 0.6.3'
 
 end

@@ -231,8 +231,6 @@
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (!self.dataSource && ![self.dataSource respondsToSelector:@selector(numberOfItemsInCollectionView:)]) {
         if (!self.dataSource) return 0;
-        SEL sel = @selector(numberOfItemsInCollectionView:);
-        NSAssert1(false, @"JKCyclicScrollView datasource- %@ should be assinged and implemented", NSStringFromSelector(sel));
         return 0;
     }
     
@@ -257,8 +255,6 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (!self.dataSource && ![self.dataSource respondsToSelector:@selector(collectionView:cellForItemAtIndex:)]) {
         if (!self.dataSource) return nil;
-        SEL sel = @selector(collectionView:cellForItemAtIndex:);
-        NSAssert1(false, @"JKCyclicScrollView datasource- %@ should be assinged and implemented", NSStringFromSelector(sel));
         return nil;
     }
     self.item = indexPath.row;
@@ -333,10 +329,13 @@
         _collectionView.backgroundColor = [UIColor clearColor];
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.showsVerticalScrollIndicator = NO;
+        _collectionView.translatesAutoresizingMaskIntoConstraints = NO;
         [self addSubview:_collectionView];
-        [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.and.trailing.and.top.and.bottom.equalTo(self).with.offset(0);
-        }];
+        
+        // align _collectionView from the left and right
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_collectionView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_collectionView)]];
+        // align _collectionView from the top and bottom
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_collectionView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_collectionView)]];
     }
     return _collectionView;
 }

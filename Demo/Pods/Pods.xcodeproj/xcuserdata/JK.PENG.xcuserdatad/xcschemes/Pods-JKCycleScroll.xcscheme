@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3709B69C523F1646A9D9F93B'
+               BlueprintIdentifier = '15FB91CFFC45423958B0411D'
                BlueprintName = 'Pods-JKCycleScroll'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-JKCycleScroll.a'>

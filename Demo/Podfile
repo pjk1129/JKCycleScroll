@@ -8,8 +8,6 @@ install! 'cocoapods',
 inhibit_all_warnings!
 
 target 'JKCycleScroll' do
-
-pod 'Masonry', '~> 0.6.3'
-pod 'SDWebImage'
-
+    pod 'SDWebImage'
+    
 end
